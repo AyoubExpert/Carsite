@@ -1,0 +1,11 @@
+{
+    "Server_Settings": {
+        "Name": "localhost",
+        "Database": "carsite"
+    },
+    
+    "User_Settings": {
+        "Name": "root",
+        "Pass": ""
+    }
+}
