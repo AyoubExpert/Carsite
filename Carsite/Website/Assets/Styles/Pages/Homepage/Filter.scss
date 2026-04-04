@@ -1,0 +1,114 @@
+.filter-menu {
+    position: fixed;
+    /* stick to the left side */
+    top: 100px;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    /* same width as dropdown */
+    background: white;
+    /* sidebar background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    z-index: 1;
+    .filter-group {
+        margin-bottom: 20px;
+        
+        h4 {
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            font-size: 0.9em;
+            color: #963838;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .brand-button {
+            border: 2px solid transparent;
+            background: none;
+            padding: 1px;
+            margin: 5px 5px 5px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.2s, border-color 0.2s;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+
+            &:hover {
+                border-color: #007bff;
+                transform: scale(1.1);
+            }
+
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+
+        .slider {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            input[type='range'] {
+                flex: 1;
+                height: 6px;
+                border-radius: 5px;
+                background: #ddd;
+                outline: none;
+                cursor: pointer;
+
+                &::-webkit-slider-thumb {
+                    width: 18px;
+                    height: 18px;
+                    background: #007bff;
+                    border-radius: 50%;
+                    border: 2px solid white;
+                }
+            }
+
+            span {
+                min-width: 50px;
+                font-weight: bold;
+            }
+        }
+
+        #selected-brands {
+            display: flex;
+            flex-wrap: wrap;
+
+            .selected-item {
+                display: inline-flex;
+                align-items: center;
+                background: #eee;
+                border-radius: 20px;
+                padding: 5px 10px;
+                margin: 4px;
+                font-size: 0.85em;
+            }
+
+            .selected-item button {
+                margin-left: 8px;
+                border: none;
+                background: none;
+                cursor: pointer;
+                color: red;
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+/* Adjust the main content to leave space for the sidebar */
+.main-content {
+    margin-left: 300px;
+}

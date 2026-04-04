@@ -1,0 +1,99 @@
+.cars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(304px, 330px));
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+
+    .car-details {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 25px;
+        gap: 16px;
+        border-radius: 4px;
+
+        h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .brand {
+            color: #90A3BF;
+            font-size: 0.9rem;
+        }
+
+        img {
+            width: 100%;
+            height: 87px;
+            object-fit: contain;
+            align-self: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .Icon {
+            height: 30px;
+            width: 30px;
+        }
+
+        .car-specification {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(70px, auto));
+            gap: 5px;
+            margin-bottom: 10px;
+            justify-content: center;
+
+            span {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: #90A3BF;
+                font-size: 0.7rem;
+                white-space: nowrap;
+                height: 30px;
+            }
+        }
+
+        .rent-details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+
+            .price-block {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+
+                .price {
+                    color: #1A202C;
+                    font-weight: 600;
+                    font-size: 0.9rem;
+                }
+
+                .discount {
+                    color: #90A3BF;
+                    font-size: 0.75rem;
+                }
+
+                span span {
+                    color: #90A3BF;
+                }
+            }
+
+            .button-primary {
+                padding: 10px 15px;
+                font-size: 0.85rem;
+                line-height: 1.2;
+            }
+        }
+
+        .button-primary {
+            margin-left: auto;
+            padding: 10px 15px;
+            font-size: 0.85rem;
+            line-height: 1.2;
+        }
+    }
+}
