@@ -127,7 +127,7 @@ if ($id) {
     </main>
 
     <?php include __DIR__ . '/../../Assets/Includes/Footer.php'; ?>
-    <script src="/../../Assets/Includes/Main.js"></script>
+    <script type="module" src="/../../Assets/Includes/Main.js"></script>
 </body>
 
 </html>

@@ -24,9 +24,11 @@
                 <button type="submit">Rydr</button>
             </form>
         </div>
-        <form class="search-form" action="">
-            <input type="search" placeholder="Welke auto wilt u huren?">
-            <img src="<?php echo $bases_url . 'Assets/Images/Icons/Search.svg'; ?>" alt="Search Icon">
+       
+        <form class="search-form" method="GET" action="<?= $bases_url ?>../Index.php">
+            <input type="hidden" name="page" value="Offer">
+            <input type="search" name="query" placeholder="Welke auto wilt u huren?">
+           <img src="<?php echo $bases_url . 'Assets/Images/Icons/Search.svg'; ?>" alt="Search Icon">
         </form>
 
         <nav>

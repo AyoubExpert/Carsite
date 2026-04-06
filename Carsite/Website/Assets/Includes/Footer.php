@@ -33,6 +33,7 @@
         </div>
     </div>
 </footer>
+
 <div class="legal-footer">
     <div class="legal">
         <div class="copyright">
@@ -46,18 +47,25 @@
         </ul>
     </div>
 </div>
+
 <div id="loginModal" class="modal hidden">
     <div class="modal-content">
         <h2>Welkom bij Rydr</h2>
         <p>Kies hoe je verder wilt gaan:</p>
         <div class="modal-actions">
-            <a href="/login-form" class="button-secondary">Inloggen</a>
-            <a href="/register-form" class="button-primary">Account aanmaken</a>
+            <form method="GET" action="<?= $bases_url ?>../Index.php" onsubmit="setCity(this)">
+                <input type="hidden" name="page" value="Login">
+                <button type="submit" class="button-secondary">Login</button>
+            </form>
+
+            <form method="GET" action="<?= $bases_url ?>../Index.php" onsubmit="setCity(this)">
+                <input type="hidden" name="page" value="Signup">
+                <button type="submit" class="button-primary">Signup</button>
+            </form>
         </div>
         <button class="modal-close">&times;</button>
     </div>
 </div>
-<script src="Website/Assets/Includes/Main.js"></script>
-
+<script type="module" src="Website/Assets/Includes/Main.js"></script>
 </body>
 </html>

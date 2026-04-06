@@ -32,7 +32,7 @@ require 'Website/Database/Connection.php';
     </main>
     
     <?php include 'Website/Assets/Includes/Footer.php'; ?>
-    <script src="Website/Assets/Includes/Main.js"></script>
+    <script type="module" src="Website/Assets/Includes/Main.js"></script>
 </body>
 
 </html>

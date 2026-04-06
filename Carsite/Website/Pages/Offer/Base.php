@@ -26,5 +26,4 @@ $limit = $_GET['limit'] ?? null;
 
     <?php include $bases_url . 'Assets/Includes/Footer.php'; ?>
 </body>
-
 </html>

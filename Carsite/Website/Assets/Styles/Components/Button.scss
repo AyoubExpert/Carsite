@@ -1,4 +1,4 @@
-.button-primary {
+@mixin button-setup {
   background-color: $color-primary !important;
   color: white !important;
   border-radius: 4px;
@@ -10,15 +10,20 @@
   z-index: 3;
 }
 
+.button-primary {
+  @include button-setup;
+}
+
+.button-secondary {
+  @include button-setup;
+  background-color: #e0e0e0 !important;
+  &:hover {
+    background-color: #ccc;
+  }
+}
+
 .button {
-  color: white !important;
-  border-radius: 4px;
-  padding: 10px 20px;
-  max-width: fit-content;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  z-index: 3;
+  @include button-setup;
 }
 
 .button-dynamic {

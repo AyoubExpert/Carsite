@@ -3,8 +3,9 @@ footer {
     display: flex;
     padding: 2em 4em;
     height: 190px;
-        position: sticky;
+    position: sticky;
     z-index: 5;
+
     .brand {
         flex: 1;
     }
@@ -13,7 +14,6 @@ footer {
         flex: 1;
         display: flex;
         gap: 3em;
-
         justify-content: flex-end;
 
         .links {
@@ -48,7 +48,9 @@ footer {
     background-color: white;
     border-top: 1px solid rgba(19, 19, 19, 0.16);
     height: 0px;
-    
+    position: sticky;
+    z-index: 5;
+
     .legal-links ul {
         display: flex;
         gap: 1em;
