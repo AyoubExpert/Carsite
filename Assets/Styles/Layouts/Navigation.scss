@@ -1,0 +1,154 @@
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    height: 100px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0 2rem;
+    /* reduced padding if needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        form button {
+            display: inline-flex;
+            color: $color-primary;
+            font-size: 2em;
+            border: none;
+            background: none;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            cursor: pointer;
+
+            img {
+                width: 40px;
+                height: auto;
+            }
+        }
+    }
+
+        .search-form {
+            position: relative;
+        
+            margin-left: 100px;
+            flex: 1;
+            /* take remaining space */
+            display: flex;
+            align-items: center;
+            margin: 0 5rem;
+            min-width: 200px;
+    
+            input[type="search"] {
+                width: 492px;
+                padding: 10px 40px 10px 40px;
+                /* left padding for icon */
+                border: 1px solid #C3D4E9;
+                border-radius: 70px;
+                font-size: 14px;
+                transition: all 0.2s ease-in-out;
+    
+                &:focus {
+                    outline: none;
+                    border-color: $color-primary;
+                    box-shadow: 0 0 0 2px rgba(53, 99, 233, 0.2);
+                }
+            }
+    
+            /* place the icon inside the input properly */
+            img {
+                position: absolute;
+                /* stays relative to the form */
+                left: 15px;
+                /* adjust for padding */
+                top: 50%;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+                pointer-events: none;
+                /* lets clicks go through */
+            }
+        }
+
+   nav ul {
+       display: flex;
+       /* horizontal layout */
+       align-items: center;
+       /* vertical center */
+       gap: 1rem;
+       /* spacing between items */
+       list-style: none;
+       margin: 0;
+       padding: 0;
+
+       form {
+           display: flex;
+           /* make form a flex container */
+           align-items: center;
+           /* vertically center buttons inside form */
+           margin: 0;
+           /* remove default form margin */
+           padding: 0;
+
+           button {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            color: #C3D4E9;
+               padding: 10px 15px;
+               font-size: 14px;
+               cursor: pointer;
+               border: none;
+               background: none;
+
+               &.button-primary.start-huren {
+                   padding: 8px 16px;
+                   font-weight: 700;
+                   background-color: $color-primary;
+                   color: white;
+                   cursor: pointer;
+               }
+           }
+       }
+   }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        .account {
+            position: relative;
+
+            img {
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+            }
+
+            .account-dropdown {
+                display: none;
+                position: absolute;
+                top: 110%;
+                right: 0;
+                background-color: white;
+                border: 1px solid #e1e1e1;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                z-index: 10;
+                min-width: 180px;
+            }
+
+            &.active .account-dropdown {
+                display: block;
+            }
+        }
+    }
+}
