@@ -1,0 +1,270 @@
+.car-detail {
+    max-width: 1280px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+
+    .detail-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+    }
+
+    .advertorial {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: none;
+        position: relative;
+        border-radius: 10px;
+        padding: 0;
+        overflow: hidden;
+
+        .simple-image {
+            background: linear-gradient(135deg, #2B6EFF, #1A4FCC);
+            border-radius: 10px;
+            padding: 50px;
+            position: relative;
+
+            h2 {
+                color: white;
+                max-width: 85%;
+                font-weight: 700;
+                font-size: 1.9rem;
+                line-height: 1.3;
+                letter-spacing: -0.02em;
+                margin-bottom: 12px;
+                position: relative;
+                z-index: 2;
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.92);
+                max-width: 85%;
+                font-size: 1rem;
+                line-height: 1.5;
+                margin-bottom: 2rem;
+                position: relative;
+                z-index: 2;
+            }
+
+            .car-image-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0.5rem;
+                position: relative;
+                z-index: 2;
+
+                img {
+                    width: 100%;
+                    max-width: 460px;
+                    object-fit: contain;
+                    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+
+            .background-header-element {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0.15;
+                border-radius: 10px;
+                pointer-events: none;
+                z-index: 0;
+            }
+        }
+
+        .simple-gallery {
+            margin-top: 10px;
+
+            .gallery-row {
+                display: flex;
+                gap: 12px;
+                justify-content: space-between;
+            }
+
+            .gallery-img {
+                flex: 1;
+                aspect-ratio: 1 / 1;
+                border-radius: 12px;
+                overflow: hidden;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                background: linear-gradient(135deg, #2B6EFF, #1A4FCC);
+                border: 5px solid $color-primary;
+
+                &:hover {
+                    transform: translateY(-2px);
+                    border-color: $color-primary-dark;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit:fill;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .white-background {
+        background: white;
+        border-radius: 28px;
+        padding: 32px 28px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1A1F2E;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .rating-stars {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1.25rem;
+
+            .stars {
+                display: flex;
+                gap: 4px;
+
+                &::before {
+                    content: "★★★★★";
+                    font-size: 1rem;
+                    letter-spacing: 2px;
+                    color: #E2E8F0;
+                }
+
+                &.stars-4::before {
+                    background: linear-gradient(90deg, #FBBF24 80%, #E2E8F0 80%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                }
+            }
+
+            .review-count {
+                color: #6C727F;
+                font-size: 0.85rem;
+                font-weight: 500;
+            }
+        }
+
+        .description-text {
+            color: #4A5568;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .car-type-section {
+            margin-top: 0.5rem;
+
+            .specs-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+                margin: 1.5rem 0;
+
+                .spec-row {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.75rem 0;
+                    border-bottom: 1px solid #EFF0F4;
+
+                    .spec-label {
+                        color: #6C727F;
+                        font-weight: 500;
+                        font-size: 0.9rem;
+                    }
+
+                    .spec-value {
+                        color: #1A1F2E;
+                        font-weight: 600;
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+        }
+
+        .call-to-action {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 1rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #F0F2F8;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            .price-wrapper {
+                display: flex;
+                align-items: baseline;
+                gap: 0.75rem;
+                flex-wrap: wrap;
+
+                .price-original {
+                    font-size: 1.25rem;
+                    color: #9CA3AF;
+                    text-decoration: line-through;
+                    font-weight: 500;
+                }
+
+                .price-current {
+                    font-size: 2rem;
+                    font-weight: 800;
+                    color: #1A1F2E;
+                    letter-spacing: -0.02em;
+
+                    span {
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: #6C727F;
+                    }
+                }
+
+                .discount-badge {
+                    background: #FFE5E5;
+                    color: #E53E3E;
+                    padding: 0.25rem 0.75rem;
+                    border-radius: 20px;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                }
+            }
+
+            .button-primary {
+                color: white;
+                padding: 0.9rem 2rem;
+                display: inline-block;
+                border: none;
+                cursor: pointer;
+                font-size: 0.95rem;
+
+                &:hover {
+                    background: #2D3748;
+                }
+            }
+        }
+    }
+}

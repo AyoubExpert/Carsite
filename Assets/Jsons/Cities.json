@@ -1,0 +1,198 @@
+[
+  {
+    "name": "Amsterdam",
+    "province": "Noord-Holland"
+  },
+  {
+    "name": "Rotterdam",
+    "province": "Zuid-Holland"
+  },
+  {
+    "name": "Den Haag",
+    "province": "Zuid-Holland"
+  },
+  {
+    "name": "Utrecht",
+    "province": "Utrecht"
+  },
+  {
+    "name": "Eindhoven",
+    "province": "Noord-Brabant"
+  },
+  {
+    "name": "Groningen",
+    "province": "Groningen"
+  },
+  {
+    "name": "Tilburg",
+    "province": "Noord-Brabant"
+  },
+  {
+    "name": "Almere",
+    "province": "Flevoland"
+  },
+  {
+    "name": "Breda",
+    "province": "Noord-Brabant"
+  },
+  {
+    "name": "Nijmegen",
+    "province": "Gelderland"
+  },
+  {
+    "name": "Enschede",
+    "province": "Overijssel"
+  },
+  {
+    "name": "Haarlem",
+    "province": "Noord-Holland"
+  },
+  {
+    "name": "Arnhem",
+    "province": "Gelderland"
+  },
+  {
+    "name": "Zaanstad",
+    "province": "Noord-Holland"
+  },
+  {
+    "name": "Amersfoort",
+    "province": "Utrecht"
+  },
+  {
+    "name": "Apeldoorn",
+    "province": "Gelderland"
+  },
+  {
+    "name": "Hoofddorp",
+    "province": "Noord-Holland"
+  },
+  {
+    "name": "Maastricht",
+    "province": "Limburg"
+  },
+  {
+    "name": "Leiden",
+    "province": "Zuid-Holland"
+  },
+  {
+    "name": "Dordrecht",
+    "province": "Zuid-Holland"
+  },
+  {
+    "name": "Zoetermeer",
+    "province": "Zuid-Holland"
+  },
+  {
+    "name": "Zwolle",
+    "province": "Overijssel"
+  },
+  {
+    "name": "Deventer",
+    "province": "Overijssel"
+  },
+  {
+    "name": "Delft",
+    "province": "Zuid-Holland"
+  },
+  {
+    "name": "Alkmaar",
+    "province": "Noord-Holland"
+  },
+  {
+    "name": "Heerlen",
+    "province": "Limburg"
+  },
+  {
+    "name": "Venlo",
+    "province": "Limburg"
+  },
+  {
+    "name": "Hilversum",
+    "province": "Noord-Holland"
+  },
+  {
+    "name": "Oss",
+    "province": "Noord-Brabant"
+  },
+  {
+    "name": "Roosendaal",
+    "province": "Noord-Brabant"
+  },
+  {
+    "name": "Assen",
+    "province": "Drenthe"
+  },
+  {
+    "name": "Leeuwarden",
+    "province": "Friesland"
+  },
+  {
+    "name": "Emmen",
+    "province": "Drenthe"
+  },
+  {
+    "name": "Helmond",
+    "province": "Noord-Brabant"
+  },
+  {
+    "name": "Purmerend",
+    "province": "Noord-Holland"
+  },
+  {
+    "name": "Schiedam",
+    "province": "Zuid-Holland"
+  },
+  {
+    "name": "Spijkenisse",
+    "province": "Zuid-Holland"
+  },
+  {
+    "name": "Gouda",
+    "province": "Zuid-Holland"
+  },
+  {
+    "name": "Vlaardingen",
+    "province": "Zuid-Holland"
+  },
+  {
+    "name": "Lelystad",
+    "province": "Flevoland"
+  },
+  {
+    "name": "Hoorn",
+    "province": "Noord-Holland"
+  },
+  {
+    "name": "Middelburg",
+    "province": "Zeeland"
+  },
+  {
+    "name": "Vlissingen",
+    "province": "Zeeland"
+  },
+  {
+    "name": "Den Helder",
+    "province": "Noord-Holland"
+  },
+  {
+    "name": "Tiel",
+    "province": "Gelderland"
+  },
+  {
+    "name": "Doetinchem",
+    "province": "Gelderland"
+  },
+  {
+    "name": "Sneek",
+    "province": "Friesland"
+  },
+  {
+    "name": "Drachten",
+    "province": "Friesland"
+  },
+  {
+    "name": "Kampen",
+    "province": "Overijssel"
+  }
+]
